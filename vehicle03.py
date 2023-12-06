@@ -23,7 +23,6 @@ class VehicleModel:
 
         return J
 
-
     def optimize_trajectory(self):
         # Perform optimization to find A0 and B0
         result = minimize(self.objective_function, x0=[0, 0], bounds=[(-10, 10), (-10, 10)])
