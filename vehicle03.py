@@ -29,7 +29,6 @@ class VehicleModel:
         A0_opt, B0_opt = result.x
         return A0_opt, B0_opt
 
-
     def generate_trajectory(self, A0, B0):
         tf = self.tf
         t_values = np.linspace(0, tf, 100)
